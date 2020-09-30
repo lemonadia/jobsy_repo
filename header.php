@@ -64,5 +64,4 @@
       </ul>
     </div>
   </div>
-</header>
-<section>gdf</section>
+
