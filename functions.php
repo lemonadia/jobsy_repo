@@ -1,22 +1,37 @@
 <?php
 // Defines
-define( 'LC_DIR', get_stylesheet_directory() );
-define( 'LC_LIB', LC_DIR . '/lib' );
-define( 'LC_LIB_CLASS', LC_LIB . '/classes' );
-define( 'LC_HELP_CLASS', LC_LIB . '/helpers' );
-define( 'LC_URI', get_stylesheet_directory_uri() );
-define( 'LC_URI_ASSETS', LC_URI . '/assets' );
-define( 'LC_URI_CSS', LC_URI_ASSETS . '/css' );
-define( 'LC_URI_JS', LC_URI . '/js' );
+define( 'LESSCODE_DIR', get_stylesheet_directory() );
+define( 'LESSCODE_LIB', LESSCODE_DIR . '/lib' );
+define( 'LESSCODE_LIB_CLASS', LESSCODE_LIB . '/classes' );
+define( 'LESSCODE_HELP_CLASS', LESSCODE_LIB . '/helpers' );
+define( 'LESSCODE_URI', get_stylesheet_directory_uri() );
+define( 'LESSCODE_URI_ASSETS', LESSCODE_URI . '/assets' );
+define( 'LESSCODE_URI_CSS', LESSCODE_URI_ASSETS . '/css' );
+define( 'LESSCODE_URI_JS', LESSCODE_URI . '/js' );
+
+// // Helpers
+// require_once LESSCODE_HELP_CLASS . '/helpers.php';
+
 
 // Classes
-require_once LC_LIB_CLASS . '/class.theme.php';
+require_once LESSCODE_LIB_CLASS . '/class.theme.php';
+require_once LESSCODE_LIB_CLASS . '/class.taxonomy.php';
+require_once LESSCODE_LIB_CLASS . '/class.functions.php';
+
 
 
 // Run theme
-//$LC_theme = new LC_Theme();
-//$LC_theme->run();
+$LESSCODE_theme = new LESSCODE_Theme();
+$LESSCODE_theme->run();
 
+
+// Run functions
+$IZOBLOK_functions = new IZOBLOK_Functions();
+$IZOBLOK_functions->run();
+
+// Run custom post type taxonomy
+$LESSCODE_taxonomy = new LESSCODE_Taxonomy();
+$LESSCODE_taxonomy->run();
 
 
 function codyframe_ie_support() {
