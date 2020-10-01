@@ -55,6 +55,12 @@
   @include defineColorHSL(--color-text-nav-light, 0, 0%, 96%);
   @include defineColorHSL(--color-text-nav-lighter, 0, 0%, 100%);
 
+  @include defineColorHSL(--color-bg-grey-darker, 0, 0%, 77%);
+  @include defineColorHSL(--color-bg-grey-dark, 0, 0%, 87%);
+  @include defineColorHSL(--color-bg-grey, 0, 0%, 97%);
+  @include defineColorHSL(--color-bg-grey-light, 0, 0%, 99%);
+  @include defineColorHSL(--color-bg-grey-lighter, 0, 0%, 100%);
+
   @include defineColorHSL(--color-black, 240, 8%, 12%);
   @include defineColorHSL(--color-white, 0, 0%, 100%);
 

@@ -53,13 +53,13 @@
         </a>
       </div>
 
-      <ul class="f-header__list flex-grow flex-basis-0 justify-center@md">
+      <ul class="f-header__list flex-grow flex-basis-0 justify-end">
         <li class="f-header__item"><a href="#0" class="f-header__link">Services</a></li>
         <li class="f-header__item"><a href="#0" class="f-header__link" aria-current="page">Work</a></li>
         <li class="f-header__item"><a href="#0" class="f-header__link">About</a></li>
 		<li class="f-header__item"><a href="#0" class="f-header__link">Blog</a></li>
 		<li class="f-header__item"><a href="#0" class="f-header__link">Contact</a></li>
-		<li class="f-header__item"><a href="#0" class="f-header__link">PL/EN</a></li>
+		<li class="f-header__item "><a href="#0" class="f-header__link">PL/EN</a></li>
 
       </ul>
     </div>
