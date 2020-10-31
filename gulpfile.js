@@ -69,8 +69,8 @@ gulp.task(
   gulp.series(["sass", "scripts"], function () {
     connect.server({}, function () {
       browserSync({
-        host: "http://localhost",
-        proxy: "http://localhost", // or project.dev/app/
+        host: "http://localhost:82/jobsy",
+        proxy: "http://localhost:82/jobsy", // or project.dev/app/
         port: 3000
       });
     });
