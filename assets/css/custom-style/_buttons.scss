@@ -8,8 +8,6 @@
   @include fontSmooth;
   transition: all 0.2s ease;
 
- 
-
   &:hover {
     box-shadow: var(--shadow-sm);
   }
@@ -22,41 +20,54 @@
   &:active {
     transform: translateY(2px);
   }
- 
 }
-
 
 .btn--black {
   background-color: black;
-  color:#ffffff;
-  font-size: 19px;
+  color: #ffffff;
+  font-size: 17px;
   line-height: 27px;
-
+  width: 100%;
+  @include breakpoint(md) {
+    width: 37%;
+    font-size: 14.5px;
+  }
 }
 
 .btn--transparent {
   background-color: transparent;
   border: 1px solid #000000;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 27px;
+  width: 100%;
+  @include breakpoint(md) {
+    width: 37%;
+    font-size: 14.5px;
+  }
 }
-
 
 .btn--white {
   background-color: transparent;
   border: 1px solid white;
-  color:white;
+  color: white;
   @include breakpoint(md) {
     font-size: 13px;
-}
-
-
+  }
 }
 
 .btn--green {
-  background-color: #12E85C;
+  background-color: #12e85c;
   color: #000000;
   @include breakpoint(md) {
     font-size: 13px;
+  }
 }
+
+.btn--white-bg {
+  background-color: white;
+  border: 1px solid white;
+  color: #3b75e8;
+  @include breakpoint(md) {
+    font-size: 13px;
+  }
 }

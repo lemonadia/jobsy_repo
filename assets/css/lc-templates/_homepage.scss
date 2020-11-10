@@ -1,34 +1,49 @@
 .hero-hp {
+  .btn {
+    position: relative;
+    z-index: 99;
+  }
+  position: relative;
   @include breakpoint(md) {
     height: 100vh;
+    overflow: hidden;
   }
   h1 {
     font-size: 27px;
     line-height: 30px;
     @include breakpoint(md) {
-      font-size: 51px;
-      line-height: 65px;
+      font-size: 37px;
+      line-height: 49px;
       position: relative;
       z-index: 6;
     }
   }
   p {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 17px;
+    line-height: 21px;
     padding-bottom: 365px;
     @include breakpoint(md) {
+      font-size: 17px;
       padding-bottom: 0;
     }
   }
   .hero-img {
-    width: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 27%;
+    width: 90%;
+    @include breakpoint(md) {
+      width: 100%;
+    }
+
     img {
       display: block;
       width: 262px;
       margin: auto;
     }
     @include breakpoint(md) {
-      width: 540px;
+      position: static;
+      width: 526px;
       position: relative;
       top: 30px;
       right: 50px;

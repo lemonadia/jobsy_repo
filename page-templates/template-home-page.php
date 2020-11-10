@@ -5,18 +5,18 @@
 ?>
 <?php get_header(); ?>
 
-    <section class="justify-center flex items-center bg-primary hero-hp overflow-hidden">
+    <section class="justify-center flex items-center bg-primary hero-hp">
         <div class="container max-width-lg">
-            <div class="grid">
-                <div class="col-7@lg flex flex-column justify-center padding-top-md">
+            <div class="grid gap-md@lg">
+                <div class="col-10@sm col-5@md flex flex-column justify-center padding-top-md">
                     <h1 class="padding-bottom-xxs">Jobsy, pracownicy tymczasowi, na których możesz polegać.</h1>
-                    <p>Zatrudniaj pracowników lub zdobądź pracę dorywczą. Łatwiej<br> i szybciej, niż kiedykolwiek.</p>
+                    <p>Zatrudniaj pracowników lub zdobądź pracę dorywczą. Łatwiej i szybciej, niż kiedykolwiek.</p>
                     <div class="padding-top-lg"> 
-                        <a href="" class="btn btn--black margin-right-sm"><span>Szukam pracy</span></a>
+                        <a href="" class="btn btn--black margin-bottom-xs margin-right-sm"><span>Szukam pracy</span></a>
                         <a href="" class="btn btn--transparent"><span>Jestem pracodawcą</span></a>
                     </div>
                 </div>
-                <div class="col-4@lg">
+                <div class="col-4@md offset-1@md">
                     <div class="hero-img padding-top-sm padding-top-xxl@xxl">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/hero-home.png" alt="chłopak w okularach">
                     </div>
@@ -32,32 +32,32 @@
         <div class="flex justify-center items-center padding-top-xl">
             <div>
                 <div class="sectors-icons">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-clock.png">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/talerz.png">
                     <h4 class="padding-top-xs">Catering</h4>
                  </div>
                 <div class="sectors-icons">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-clock.png">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/megafon.png">
                     <h4 class="padding-top-xs">Catering</h4>
                 </div>
                 <div class="sectors-icons">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-clock.png">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mapa.png">
                     <h4 class="padding-top-xs">Catering</h4>
                 </div>
                 <div class="sectors-icons">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-clock.png">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/torba.png">
                     <h4 class="padding-top-xs">Catering</h4>
                 </div>
                 <div class="flex justify-center padding-top-xl">
                 <div class="sectors-icons">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-clock.png">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/restaurant.png">
                     <h4 class="padding-top-xs">Catering</h4>
                 </div>
                 <div class="sectors-icons">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-clock.png">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/domy.png">
                     <h4 class="padding-top-xs">Catering</h4>
                 </div>
                 <div class="sectors-icons">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-clock.png">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/spinacz.png">
                     <h4 class="padding-top-xs">Catering</h4>
                 </div>
                 </div>

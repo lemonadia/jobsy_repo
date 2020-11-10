@@ -5,9 +5,39 @@
 ?>
 
 
-<?php get_header(); ?>
+<?php get_header('white'); ?>
 
-<section>
+<section class="company-hero bg-secondary padding-top-xl padding-bottom-xxl padding-top-xl@md">
+  <div class="container max-width-lg">
+    <div class="grid flex items-center">
+      <div class="col-5@lg padding-top-xxl@lg">
+         <h1>Wykwalifikowany personel <Br> czeka na Ciebie</h1>
+        <div class="slideshow js-slideshow " data-swipe="on">
+          <p class="sr-only">Slideshow Items</p>
+            <ul class="slideshow__content">
+              <li class="slideshow__item bg js-slideshow__item" style="">
+                <div class='text-component'>
+                <p class="padding-top-sm padding-bottom-xl">Dzięki Jobsy znalezienie odpowiedzialnych pracowników tymczasowych jest naprawdę łatwe.</p>
+              </li>
+              <li class="slideshow__item bg js-slideshow__item">
+                  <div class='text-component'>
+                     <p class="padding-top-sm padding-bottom-xl">Dzięki AJDJAKDJAKJDA znalezienie odpowiedzialnych pracowników tymczasowych jest naprawdę łatwe.</p>
+                  </div>
+             </li> 
+              <li class="slideshow__item bg js-slideshow__item">
+                <div class='text-component'>
+                  <p class="padding-top-sm padding-bottom-xl">Dzięki FAFAFAF znalezienie odpowiedzialnych pracowników tymczasowych jest naprawdę łatwe.</p>
+                </div>
+             </li>   
+          </ul>
+        </div>
+        <a href="" class="btn btn--white-bg margin-top-lg"><span>Zarejestruj się</span></a>
+      </div>
+      <div class="col-7@lg">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/company-hero.png" alt="chłopak w okularach">
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="sectors padding-top-xxl padding-bottom-xxl position-relative">
@@ -65,22 +95,19 @@
          </div>
 </section>
 
-<section>
+<section class="timeline-company position-relative overflow-hidden padding-bottom-md">
     <div class="container max-width-lg">
         <h1 class="text-center padding-top-md"> Szukasz pracowników? Z Jobsy to proste!</h1>
          <p class="text-center padding-top-md padding-bottom-xl">Wystarczy kilka prostych kroków, by dołączyć do Jobsy i znaleźć dobrych pracowników.</p>
         <div class="grid">
-            <div class="col-8@lg">
+            <div class="col-7@lg">
             <div class="position-relative z-index-1 overflow-hidden padding-y-xl">
             <div class="container">
                 <div class="v-timeline v-timeline--icons js-v-timeline" data-animation="on">
-                
-
                 <section class="v-timeline__section js-v-timeline__section">
                     <div class="v-timeline__marker bg-white border border-3 border-bg " aria-hidden="true">
                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/blue-tick.png">
                     </div>
-            
                     <div class="v-timeline__items-group">
                     <div class="v-timeline__itemradius-md">
                         <div class="text-component">
@@ -116,7 +143,7 @@
                 </section>
                 <section class="v-timeline__section js-v-timeline__section">
                     <div class="v-timeline__marker border border-3 border-bg " aria-hidden="true">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/people.png">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/people.png">
                     </div>
         
                     <div class="v-timeline__items-group">
@@ -144,6 +171,7 @@
             </div>
             </div>
             </div>
+                 <img class="chat-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/chat.png">
         </div>
     </div>
 </section>
@@ -160,83 +188,6 @@
     </div>
     <img class="photo-announcment" src="<?php echo get_stylesheet_directory_uri(); ?>/images/girl-company.png" alt="kobieta dziewczyna uśmiech praca">
 </section>
-<fieldset>
-  <legend class="form-legend">Choose an option:</legend>
 
-  <div class="choice-accordion  js-choice-accordion" data-animation="on">
-
-    <div class="choice-accordion__item">
-      <!-- fallback -->
-      <div class="choice-accordion__fallback js-choice-accordion__fallback">
-        <input type="radio" name="choice-accordion-radio" id="choice-accordion-radio-1">
-        <label for="choice-accordion-radio-1">Option 1 - with Panel</label>
-      </div>
-
-      <!-- control -->
-      <div class="choice-accordion__btn padding-sm js-choice-accordion__btn" aria-hidden="true">
-        <div class="choice-accordion__input choice-accordion__input--radio">
-          <svg class="icon" viewBox="0 0 16 16">
-            <circle fill="currentColor" cx="8" cy="8" r="4" /></svg>
-        </div>
-
-        <p class="color-contrast-higher user-select-none">Option 1 - with Panel</p>
-      </div>
-
-      <!-- panel -->
-      <div class="choice-accordion__panel js-choice-accordion__panel">
-        <div class="text-component padding-sm">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, qui ut. Laboriosam omnis at minima corporis, quis laborum reprehenderit sequi.</p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="choice-accordion__item">
-      <!-- fallback -->
-      <div class="choice-accordion__fallback js-choice-accordion__fallback">
-        <input type="radio" name="choice-accordion-radio" id="choice-accordion-radio-2">
-        <label for="choice-accordion-radio-2">Option 2 - with Panel</label>
-      </div>
-
-      <!-- control -->
-      <div class="choice-accordion__btn padding-sm js-choice-accordion__btn" aria-hidden="true">
-        <div class="choice-accordion__input choice-accordion__input--radio">
-          <svg class="icon" viewBox="0 0 16 16">
-            <circle fill="currentColor" cx="8" cy="8" r="4" /></svg>
-        </div>
-
-        <p class="color-contrast-higher user-select-none">Option 2 - with Panel</p>
-      </div>
-
-      <!-- panel -->
-      <div class="choice-accordion__panel js-choice-accordion__panel">
-        <div class="text-component padding-sm">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, qui ut. Laboriosam omnis at minima corporis, quis laborum reprehenderit sequi.</p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="choice-accordion__item">
-      <!-- fallback -->
-      <div class="choice-accordion__fallback js-choice-accordion__fallback">
-        <input type="radio" name="choice-accordion-radio" id="choice-accordion-radio-3">
-        <label for="choice-accordion-radio-3">Option 3 - without Panel</label>
-      </div>
-
-      <!-- control -->
-      <div class="choice-accordion__btn padding-sm js-choice-accordion__btn" aria-hidden="true">
-        <div class="choice-accordion__input choice-accordion__input--radio">
-          <svg class="icon" viewBox="0 0 16 16">
-            <circle fill="currentColor" cx="8" cy="8" r="4" /></svg>
-        </div>
-
-        <p class="color-contrast-higher user-select-none">Option 3 - without Panel</p>
-      </div>
-
-    </div>
-
-  </div>
-</fieldset>
 
 <?php get_footer();

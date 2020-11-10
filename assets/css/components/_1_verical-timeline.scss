@@ -48,6 +48,7 @@
 .v-timeline__item {
   position: relative;
   flex-grow: 1;
+  font-size: 15px;
 
   &:not(:last-child) {
     margin-bottom: var(--v-timeline-items-gap);

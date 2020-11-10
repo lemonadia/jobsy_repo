@@ -27,13 +27,14 @@
 </head>
 
 <body <?php body_class( '' ); ?>>
-<header class="header-v3 bg-primary position-relative js-header-v3 padding-top-lg padding-top-xl@md">
-  <div class="header-v3__container bg-primary  scontainer max-width-lg">
+<header class="header-v3 bg-secondary position-relative js-header-v3 padding-top-lg padding-top-xl@md">
+  <div class="header-v3__container bg-secondary container max-width-lg">
     <div class="header-v3__logo">
       <a href="/">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-big.png" alt="jobsy agencja pracy praca tymczasowa">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logowhite.png" alt="jobsy agencja pracy praca tymczasowa">
       </a>
     </div>
+
     <button class="reset header-v3__nav-control switch-icon switch-icon--slide-down js-switch-icon js-toggle-menu js-tab-focus" aria-label="Toggle menu">
       <svg class="switch-icon__icon switch-icon__icon--a" viewBox="0 0 16 16">
         <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1">
@@ -42,7 +43,6 @@
           <line x1="0.5" y1="13.5" x2="15.5" y2="13.5"></line>
         </g>
       </svg>
-
       <svg class="switch-icon__icon switch-icon__icon--b" viewBox="0 0 16 16">
         <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1">
           <line x1="13.5" y1="2.5" x2="2.5" y2="13.5"></line>
@@ -57,7 +57,7 @@
         <li class="header-v3__nav-item header-v3__nav-item--logo flex-shrink-0">
           <div class="header-v3__logo">
             <a href="#0">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-big.png" alt="jobsy agencja pracy praca tymczasowa">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logowhite.png" alt="jobsy agencja pracy praca tymczasowa">
             </a>
           </div>
         </li>
