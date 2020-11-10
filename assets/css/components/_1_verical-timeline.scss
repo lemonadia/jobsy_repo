@@ -1,0 +1,114 @@
+:root {
+  --v-timeline-marker-size: 16px; // dot indicator size
+  --v-timeline-track-width: 2px; // vertical track (line) width
+  --v-timeline-triangle-size: 12px; // triangle indicator size
+  --v-timeline-sections-gap: var(--space-lg);
+  --v-timeline-items-gap: var(--space-sm);
+}
+
+.v-timeline {
+  position: relative;
+
+  &::before {
+    // track
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(
+      (var(--v-timeline-marker-size) - var(--v-timeline-track-width)) * 0.5
+    );
+    height: 100%;
+    width: var(--v-timeline-track-width);
+    border: dotted 1px grey;
+    line-height: 12px;
+  }
+}
+
+.v-timeline__section {
+  position: relative;
+  display: flex;
+
+  &:not(:last-of-type) {
+    margin-bottom: 53px;
+  }
+}
+
+.v-timeline__marker {
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  height: var(--v-timeline-marker-size);
+  width: var(--v-timeline-marker-size);
+  border-radius: 50%;
+  margin-right: calc(var(--v-timeline-triangle-size) + var(--space-xxs));
+}
+
+.v-timeline__item {
+  position: relative;
+  flex-grow: 1;
+
+  &:not(:last-child) {
+    margin-bottom: var(--v-timeline-items-gap);
+  }
+
+  &:not(:first-child) {
+    .v-timeline__date {
+      display: none; // hide date if not first item
+    }
+
+    &::before {
+      display: none; // hide triangle if not first item
+    }
+  }
+}
+
+@include breakpoint(md, "not all") {
+  // style applied only before breakpoint 'md'
+  .v-timeline__item:first-child {
+    border-top-left-radius: 0;
+  }
+}
+
+@include breakpoint(md) {
+  // edit timeline layout
+  .v-timeline::before {
+    // track
+    left: calc(50% - var(--v-timeline-track-width) / 2);
+  }
+
+  .v-timeline__section {
+    width: calc(50% + var(--v-timeline-marker-size) / 2);
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+
+      .v-timeline__marker {
+        margin-right: 0;
+        margin-left: calc(var(--v-timeline-triangle-size) + var(--space-xxs));
+      }
+
+      .v-timeline__item {
+        &:first-child {
+          border-top-right-radius: 0;
+        }
+      }
+    }
+
+    &:nth-child(even) {
+      margin-left: auto;
+
+      .v-timeline__item {
+        &:first-child {
+          border-top-left-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+// --icons
+.v-timeline--icons {
+  --v-timeline-marker-size: 3em;
+}

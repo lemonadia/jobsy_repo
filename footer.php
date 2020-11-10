@@ -1,59 +1,52 @@
-<footer class="lc--footer padding-top-md">
+<footer class="lc--footer padding-top-xl padding-bottom-xl">
 	<div class="container max-width-lg">
-        <div class="grid margin-top-lg flex">
-            <div class="col-6@lg">
-                <div class="grid gap-xl">
-                    <div class="col-6@xs col-3@lg margin-bottom-md">
-                        <span>Company</span>
-                         <ul class="footer-menu padding-top-sm">
-                            <li><a href="/">About</a></li>
-                            <li><a href="/">Work</a></li>
-                            <li><a href="/">Services</a></li>
-                            <li><a href="/">Blog</a></li>
-                            <li><a href="/">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6@xs col-3@lg margin-bottom-md">
-                        <span>Services</span>
-                        <ul class="footer-menu padding-top-sm""> 
-                            <li><a href="/">About</a></li>
-                            <li><a href="/">Work</a></li>
-                            <li><a href="/">Services</a></li>
-                            <li><a href="/">Blog</a></li>
-                            <li><a href="/">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6@xs col-3@lg margin-bottom-md">
-                       <span>Social</span>
-                       <ul class="footer-menu padding-top-sm">
-                            <li><a href="/">About</a></li>
-                            <li><a href="/">Work</a></li>
-                            <li><a href="/">Services</a></li>
-                            <li><a href="/">Blog</a></li>
-                            <li><a href="/">Contact</a></li>
-                        </ul>
-                   </div>  
+        <div class="grid">
+            <div class="col-5@lg">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-big.png">
+              <div class="grid">
+                <div class="col-11@lg">
+                   <p>W Jobsy łączymy wszystkich tych, którzy poszukują pracy tymczasowej z firmami potrzebującymi pracowników. Dbamy o to, by proces zatrudnienia przebiegał szybko i sprawnie, a obie strony były zadowolone z efektów. Stawiamy na elastyczność i upraszczamy formalności do minimum. Zarówno u pracowników, jak i pracodawców cenimy odpowiedzialność i profesjonalizm. Chcemy razem z Wami stworzyć miejsce, do którego będziecie chętnie wracać.</p>
                 </div>
+              </div>
             </div>
-            <div class="col-6@lg flex justify-end">
-                <span>LOGO</span>
-            </div>
+            <div class="col-5@lg offset-2@md ">
+                <div class="socials height-40% flex justify-end">
+                    IKONY
+                </div>
+                <div class="grid gap-xxl@md">
+                    <div class="col-4@lg padding-top-lg padding-top-0@md">
+                        <ul class="flex flex-column">
+                            <li class="padding-bottom-lg">Dla pracownika</li>
+                            <li class="padding-bottom-lg">Dla firm</li>
+                            <li>O nas</li>
+                        </ul>
+                    </div>
+                    <div class="col-4@lg">
+                    <ul class="flex flex-column padding-top-lg padding-top-0@md">
+                            <li class="padding-bottom-lg">Warunki korzystania</li>
+                            <li class="padding-bottom-lg">Polityka prywatności</li>
+                        </ul>
+                    </div>
+                    <div class="col-4@lg">
+                       
+                    </div>
+                </div>
+                <div class="footer-socials">
+                        <a href="#0">
+                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook.png">
+                        </a>
+                        <a href="#0">
+                          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/youtube.png">
+                        </a>
+                        <a href="#0">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/linkedin.png">
+                        </a>
+               </div>
+           </div>
         </div>
+    
 	</div>
-    <div class="footer-copyright padding-top-xxxl padding-bottom-md">
-        <div class="container max-width-lg">
-            <div class="grid">
-                <div class="col-6@lg">
-                    <a href="/polityka-ochrony-danych-osobowych/" class="padding-right-md">Privacy policy</a>
-                    <a href="/polityka-ochrony-danych-osobowych/"class="padding-right-md">Cookies Policy</a>
-                    <span>Copyright © 2005 – 2020 less code</span>
-                </div>
-            </div>
-        </div>
-    </div>
 </footer>
-
 <?php wp_footer(); ?>
-
 </body>
 </html>

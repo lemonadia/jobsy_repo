@@ -16,7 +16,7 @@ class LESSCODE_Theme {
 	public function enqueue_scripts() {
 		$theme_version = wp_get_theme()->get( 'Version' );
 		wp_enqueue_style( 'codyframe', get_template_directory_uri() . '/assets/css/lc.css', array(), $theme_version );
-		wp_enqueue_script( 'codyframe', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), $theme_version, true );
+		wp_enqueue_script( 'codyframe', get_template_directory_uri() . '/assets/js/scripts.js', array(), $theme_version, true );
 		wp_deregister_script( 'jquery' );
 		wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), '', false );
 

@@ -1,14 +1,14 @@
 .btn {
-  --btn-font-size: 19px;
+  // --btn-font-size: 19px;
   --btn-padding-x: var(--space-md);
-  --btn-padding-y: var(--space-xxs);
+  --btn-padding-y: var(--space-xs);
   --btn-radius: 26px;
   cursor: pointer;
   text-decoration: none;
-  line-height: 27px;
   @include fontSmooth;
-  box-shadow: var(--shadow-xs);
   transition: all 0.2s ease;
+
+ 
 
   &:hover {
     box-shadow: var(--shadow-sm);
@@ -22,4 +22,41 @@
   &:active {
     transform: translateY(2px);
   }
+ 
+}
+
+
+.btn--black {
+  background-color: black;
+  color:#ffffff;
+  font-size: 19px;
+  line-height: 27px;
+
+}
+
+.btn--transparent {
+  background-color: transparent;
+  border: 1px solid #000000;
+  font-size: 19px;
+  line-height: 27px;
+}
+
+
+.btn--white {
+  background-color: transparent;
+  border: 1px solid white;
+  color:white;
+  @include breakpoint(md) {
+    font-size: 13px;
+}
+
+
+}
+
+.btn--green {
+  background-color: #12E85C;
+  color: #000000;
+  @include breakpoint(md) {
+    font-size: 13px;
+}
 }

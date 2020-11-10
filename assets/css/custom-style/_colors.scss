@@ -24,11 +24,11 @@
   @include defineColorHSL(--color-tertiary-light, 42, 96%, 64%);
   @include defineColorHSL(--color-tertiary-lighter, 42, 96%, 74%);
 
-  @include defineColorHSL(--color-dark-blue-darker, 42, 96%, 34%);
-  @include defineColorHSL(--color-dark-blue-dark, 42, 96%, 44%);
-  @include defineColorHSL(--color-dark-blue, 42, 96%, 54%);
-  @include defineColorHSL(--color-dark-blue-light, 42, 96%, 64%);
-  @include defineColorHSL(--color-dark-blue-lighter, 42, 96%, 74%);
+  @include defineColorHSL(--color-dark-blue-darker, 212, 62%, 0%);
+  @include defineColorHSL(--color-dark-blue-dark, 212, 62%, 7%);
+  @include defineColorHSL(--color-dark-blue, 212, 62%, 14%);
+  @include defineColorHSL(--color-dark-blue-light, 212, 62%, 24%);
+  @include defineColorHSL(--color-dark-blue-lighter, 212, 62%, 34%);
 
   @include defineColorHSL(--color-bright-blue-darker, 42, 96%, 34%);
   @include defineColorHSL(--color-bright-blue-dark, 42, 96%, 44%);
@@ -65,6 +65,12 @@
   @include defineColorHSL(--color-button-green, 141, 84%, 45%);
   @include defineColorHSL(--color-button-green-light, 141, 84%, 55%);
   @include defineColorHSL(--color-button-green-lighter, 141, 84%, 65%);
+
+  @include defineColorHSL(--color-purple-darker, 253, 78%, 37%);
+  @include defineColorHSL(--color-purple-dark, 253, 78%, 47%);
+  @include defineColorHSL(--color-purple, 253, 78%, 57%);
+  @include defineColorHSL(--color-purple-light, 253, 78%, 67%);
+  @include defineColorHSL(--color-purple-lighter, 253, 78%, 77%);
 
   @include defineColorHSL(--color-black, 240, 8%, 12%);
   @include defineColorHSL(--color-white, 0, 0%, 100%);
@@ -165,6 +171,12 @@
     @include defineColorHSL(--color-button-green, 42, 96%, 54%);
     @include defineColorHSL(--color-button-green-light, 42, 96%, 64%);
     @include defineColorHSL(--color-button-green-lighter, 42, 96%, 74%);
+
+    @include defineColorHSL(--color-purple-darker, 42, 96%, 34%);
+    @include defineColorHSL(--color-purple-dark, 42, 96%, 44%);
+    @include defineColorHSL(--color-purple, 42, 96%, 54%);
+    @include defineColorHSL(--color-purple-light, 42, 96%, 64%);
+    @include defineColorHSL(--color-purple-lighter, 42, 96%, 74%);
 
     @include defineColorHSL(--color-black, 240, 8%, 12%);
     @include defineColorHSL(--color-white, 0, 0%, 100%);
@@ -267,6 +279,12 @@
     @include defineColorHSL(--color-button-green-light, 42, 96%, 64%);
     @include defineColorHSL(--color-button-green-lighter, 42, 96%, 74%);
 
+    @include defineColorHSL(--color-purple-darker, 42, 96%, 34%);
+    @include defineColorHSL(--color-purple-dark, 42, 96%, 44%);
+    @include defineColorHSL(--color-purple, 42, 96%, 54%);
+    @include defineColorHSL(--color-purple-light, 42, 96%, 64%);
+    @include defineColorHSL(--color-purple-lighter, 42, 96%, 74%);
+
     @include defineColorHSL(--color-black, 240, 8%, 12%);
     @include defineColorHSL(--color-white, 0, 0%, 100%);
 
@@ -345,50 +363,10 @@
 .bg-button-green { background-color: alpha(var(--color-button-green), var(--bg-o, 1)); }
 .bg-button-green-light { background-color: alpha(var(--color-button-green-light), var(--bg-o, 1)); }
 .bg-button-green-lighter { background-color: alpha(var(--color-button-green-lighter), var(--bg-o, 1)); }
+.bg-purple-darker { background-color: alpha(var(--color-purple-darker), var(--bg-o, 1)); }
+.bg-purple-dark { background-color: alpha(var(--color-purple-dark), var(--bg-o, 1)); }
+.bg-purple { background-color: alpha(var(--color-purple), var(--bg-o, 1)); }
+.bg-purple-light { background-color: alpha(var(--color-purple-light), var(--bg-o, 1)); }
+.bg-purple-lighter { background-color: alpha(var(--color-purple-lighter), var(--bg-o, 1)); }
 
-// border-color
-.border-secondary-darker { border-color: alpha(var(--color-secondary-darker), var(--bg-o, 1)); }
-.border-secondary-dark { border-color: alpha(var(--color-secondary-dark), var(--bg-o, 1)); }
-.border-secondary { border-color: alpha(var(--color-secondary), var(--bg-o, 1)); }
-.border-secondary-light { border-color: alpha(var(--color-secondary-light), var(--bg-o, 1)); }
-.border-secondary-lighter { border-color: alpha(var(--color-secondary-lighter), var(--bg-o, 1)); }
-.border-tertiary-darker { border-color: alpha(var(--color-tertiary-darker), var(--bg-o, 1)); }
-.border-tertiary-dark { border-color: alpha(var(--color-tertiary-dark), var(--bg-o, 1)); }
-.border-tertiary { border-color: alpha(var(--color-tertiary), var(--bg-o, 1)); }
-.border-tertiary-light { border-color: alpha(var(--color-tertiary-light), var(--bg-o, 1)); }
-.border-tertiary-lighter { border-color: alpha(var(--color-tertiary-lighter), var(--bg-o, 1)); }
-.border-dark-blue-darker { border-color: alpha(var(--color-dark-blue-darker), var(--bg-o, 1)); }
-.border-dark-blue-dark { border-color: alpha(var(--color-dark-blue-dark), var(--bg-o, 1)); }
-.border-dark-blue { border-color: alpha(var(--color-dark-blue), var(--bg-o, 1)); }
-.border-dark-blue-light { border-color: alpha(var(--color-dark-blue-light), var(--bg-o, 1)); }
-.border-dark-blue-lighter { border-color: alpha(var(--color-dark-blue-lighter), var(--bg-o, 1)); }
-.border-bright-blue-darker { border-color: alpha(var(--color-bright-blue-darker), var(--bg-o, 1)); }
-.border-bright-blue-dark { border-color: alpha(var(--color-bright-blue-dark), var(--bg-o, 1)); }
-.border-bright-blue { border-color: alpha(var(--color-bright-blue), var(--bg-o, 1)); }
-.border-bright-blue-light { border-color: alpha(var(--color-bright-blue-light), var(--bg-o, 1)); }
-.border-bright-blue-lighter { border-color: alpha(var(--color-bright-blue-lighter), var(--bg-o, 1)); }
-.border-footer-darker { border-color: alpha(var(--color-footer-darker), var(--bg-o, 1)); }
-.border-footer-dark { border-color: alpha(var(--color-footer-dark), var(--bg-o, 1)); }
-.border-footer { border-color: alpha(var(--color-footer), var(--bg-o, 1)); }
-.border-footer-light { border-color: alpha(var(--color-footer-light), var(--bg-o, 1)); }
-.border-footer-lighter { border-color: alpha(var(--color-footer-lighter), var(--bg-o, 1)); }
-.border-color-log-bg-darker { border-color: alpha(var(--color-color-log-bg-darker), var(--bg-o, 1)); }
-.border-color-log-bg-dark { border-color: alpha(var(--color-color-log-bg-dark), var(--bg-o, 1)); }
-.border-color-log-bg { border-color: alpha(var(--color-color-log-bg), var(--bg-o, 1)); }
-.border-color-log-bg-light { border-color: alpha(var(--color-color-log-bg-light), var(--bg-o, 1)); }
-.border-color-log-bg-lighter { border-color: alpha(var(--color-color-log-bg-lighter), var(--bg-o, 1)); }
-.border-text-grey-darker { border-color: alpha(var(--color-text-grey-darker), var(--bg-o, 1)); }
-.border-text-grey-dark { border-color: alpha(var(--color-text-grey-dark), var(--bg-o, 1)); }
-.border-text-grey { border-color: alpha(var(--color-text-grey), var(--bg-o, 1)); }
-.border-text-grey-light { border-color: alpha(var(--color-text-grey-light), var(--bg-o, 1)); }
-.border-text-grey-lighter { border-color: alpha(var(--color-text-grey-lighter), var(--bg-o, 1)); }
-.border-text-blue-darker { border-color: alpha(var(--color-text-blue-darker), var(--bg-o, 1)); }
-.border-text-blue-dark { border-color: alpha(var(--color-text-blue-dark), var(--bg-o, 1)); }
-.border-text-blue { border-color: alpha(var(--color-text-blue), var(--bg-o, 1)); }
-.border-text-blue-light { border-color: alpha(var(--color-text-blue-light), var(--bg-o, 1)); }
-.border-text-blue-lighter { border-color: alpha(var(--color-text-blue-lighter), var(--bg-o, 1)); }
-.border-button-green-darker { border-color: alpha(var(--color-button-green-darker), var(--bg-o, 1)); }
-.border-button-green-dark { border-color: alpha(var(--color-button-green-dark), var(--bg-o, 1)); }
-.border-button-green { border-color: alpha(var(--color-button-green), var(--bg-o, 1)); }
-.border-button-green-light { border-color: alpha(var(--color-button-green-light), var(--bg-o, 1)); }
-.border-button-green-lighter { border-color: alpha(var(--color-button-green-lighter), var(--bg-o, 1)); }
+

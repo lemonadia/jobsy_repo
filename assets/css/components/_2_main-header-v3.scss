@@ -8,14 +8,16 @@ Usage: codyhouse.co/license
 -------------------------------- */
 
 :root {
-    --header-v3-height: 50px;    // header height on small screens
+    --header-v3-height: auto;    // header height on small screens
   
     @include breakpoint(md) {
-      --header-v3-height: 70px
+      --header-v3-height: auto;
     }
   }
   
   .header-v3 {
+    background-color: var(--color-primary);
+
     height: var(--header-v3-height);
     width: 100%;
     z-index: var(--zindex-header);
@@ -37,8 +39,15 @@ Usage: codyhouse.co/license
     position: relative;
     flex-shrink: 0;
     z-index: 2;
+    width: 93px;
+    @include breakpoint(md) {
+      width: 123px;
+    }
+    @include breakpoint(xxl) {
+      width: 185px;
+    }
   
-    a, svg {
+    a, img {
       display: block;
     }
   }
@@ -56,7 +65,7 @@ Usage: codyhouse.co/license
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--color-bg);
+    background-color: var(--color-dark-blue);
     box-shadow: var(--shadow-md);
     z-index: 1;
     
@@ -90,7 +99,7 @@ Usage: codyhouse.co/license
   
   .header-v3__nav-list {
     position: absolute;
-    top: var(--header-v3-height);
+    top: 20%;
     left: 0;
     width: 100%;
     height: calc(100% - var(--header-v3-height));
@@ -103,10 +112,11 @@ Usage: codyhouse.co/license
   }
   
   .header-v3__nav-item {
-    border-bottom: 1px solid var(--color-contrast-low);
     opacity: 0;
     transform: translateY(-10%);
     transition: opacity .4s, transform .4s;
+ 
+
   
     .header-v3__nav--animate-children & { // class used to trigger list items animation 
       opacity: 1;
@@ -123,16 +133,12 @@ Usage: codyhouse.co/license
     display: none; // hide logo within nav and search btn
   }
   
-  .header-v3__nav-item--search-form {
-    margin: var(--space-xs) 0;
-    border-bottom: none;
-  }
   
   .header-v3__nav-link {
     display: block;
     padding: var(--space-sm) 0;
     font-size: var(--text-md);
-    color: var(--color-contrast-high);
+    color: white;
     text-decoration: none;
   
     &:hover {
@@ -157,10 +163,19 @@ Usage: codyhouse.co/license
   @include breakpoint(md) {
     .header-v3 {
       height: var(--header-v3-height);
+
     }
-  
+    .navigation-items {
+      display: flex;
+       li{
+         padding-left: 76px;
+       }
+      
+    }
     .header-v3__container {
       position: relative;
+      display: flex;
+      // justify-content: space-between;
     }
   
     .header-v3__nav-control,
@@ -170,8 +185,8 @@ Usage: codyhouse.co/license
   
     .header-v3__nav {
       // reset
+      background-color: var(--color-primary);
       padding: 0; 
-      background-color: transparent;
       box-shadow: none;
       position: static;
       clip: auto;
@@ -180,6 +195,7 @@ Usage: codyhouse.co/license
       overflow: visible;
       visibility: visible;
       overscroll-behavior: auto;
+  
   
       &::before {
         display: none;
@@ -232,7 +248,8 @@ Usage: codyhouse.co/license
     .header-v3__nav-link {
       display: inline-flex;
       padding: var(--space-xxxs);
-      font-size: 0.9em;
+      font-size: 15px;
+      color: black;
     }
   
     .header-v3__nav-link--icon {
