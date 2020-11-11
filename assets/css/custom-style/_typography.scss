@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Biennale Regular";
+  src: url("../../assets/fonts/biennale-regular.woff2") format("woff2"),
+    url("../../assets/fonts/biennale-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bienale Medium";
+  src: url("../../assets/fonts/biennale-medium.woff2") format("woff2"),
+    url("../../assets/fonts/biennale-medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Biennale Semibold";
+  src: url("../../assets/fonts/biennale-semibold.woff2") format("woff2"),
+    url("../../assets/fonts/biennale-semibold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Biennale Bold";
+  src: url("../../assets/fonts/biennale-bold.woff2") format("woff2"),
+    url("../../assets/fonts/biennale-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Biennale Book";
+  src: url("../../assets/fonts/biennale-book.woff2") format("woff2"),
+    url("../../assets/fonts/biennale-book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-regular: "Biennale Regular";
+$font-medium: "Biennale Medium";
+$font-semibold: "Biennale Semibold";
+$font-bold: "Biennale Bold";
+$font-book: "Biennale Book";
+
+:root {
+  // font family
+  --font-primary: "Biennale Regular";
+}
+
+h1 {
+  font-family: $font-semibold;
+}

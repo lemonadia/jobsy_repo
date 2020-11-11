@@ -28,7 +28,7 @@
 
 <body <?php body_class( '' ); ?>>
 <header class="header-v3 bg-primary position-relative js-header-v3 padding-top-lg padding-top-xl@md">
-  <div class="header-v3__container bg-primary  scontainer max-width-lg">
+  <div class="header-v3__container bg-primary container max-width-lg">
     <div class="header-v3__logo">
       <a href="/">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-big.png" alt="jobsy agencja pracy praca tymczasowa">

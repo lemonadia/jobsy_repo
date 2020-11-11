@@ -10,7 +10,7 @@
             <div class="grid gap-md@lg">
                 <div class="col-10@sm col-5@md flex flex-column justify-center padding-top-md">
                     <h1 class="padding-bottom-xxs">Jobsy, pracownicy tymczasowi, na których możesz polegać.</h1>
-                    <p>Zatrudniaj pracowników lub zdobądź pracę dorywczą. Łatwiej i szybciej, niż kiedykolwiek.</p>
+                    <p>Zatrudniaj pracowników lub zdobądź pracę dorywczą. <span>Łatwiej i szybciej</span>, niż kiedykolwiek.</p>
                     <div class="padding-top-lg"> 
                         <a href="" class="btn btn--black margin-bottom-xs margin-right-sm"><span>Szukam pracy</span></a>
                         <a href="" class="btn btn--transparent"><span>Jestem pracodawcą</span></a>
@@ -68,11 +68,13 @@
 
 <section class="hp-blue bg-dark-blue padding-top-xl padding-top-xxxl@md padding-bottom-xxl">
     <div class="container max-width-lg">
-    <div class="flex flex-column flex-row@sm items-center">
-          <div class="margin-left-xxl@md">                     
-               <img class="img-hp" src="<?php echo get_stylesheet_directory_uri(); ?>/images/conditions.png" alt="dziewczyna kawa kawiarnia">
+    <div class="grid gap-md@md  flex flex-column flex-row@sm items-center">
+          <div class="col-5@lg offset-1@md">   
+              <div class="div-size">
+                  <img class="img-hp" src="<?php echo get_stylesheet_directory_uri(); ?>/images/conditions.png" alt="dziewczyna kawa kawiarnia">
+              </div>                  
           </div>
-          <div class="margin-left-xxl@md">
+          <div class="col-5@lg">
              <h1 class="padding-top-md padding-top-0@md margin-bottom-md margin-bottom-sm@md">Pracuj na swoich warunkach</h1>
               <div>
                  <ul>
@@ -96,8 +98,8 @@
 
 <section class="hp-blue-two bg-dark-blue padding-top-xl padding-bottom-xxxl">
     <div class="container max-width-lg">
-    <div class="flex flex-row@sm flex-column-reverse items-center">
-        <div class="margin-left-xxl@md">
+    <div class="grid  gap-md@md flex flex-row@sm flex-column-reverse items-center">
+        <div class="col-5@lg offset-1">
            <h1 class="margin-bottom-md margin-bottom-sm@md margin-right-xxxs@md padding-top-md padding-top-0@md ">Docieraj do najlepszych pracowników</h1>
                <div>
                    <ul>
@@ -116,7 +118,7 @@
                     </ul>
                 </div>
             </div>
-             <div>                     
+             <div class="col-5@lg">                     
                  <img class="margin-left-xl@md img-hp"src="<?php echo get_stylesheet_directory_uri(); ?>/images/hp-second.png" alt="kobieta praca komputer">
              </div>
          </div>
@@ -126,7 +128,7 @@
     <div class="announcments-container">
         <div class="grid">
             <div class="col-9@lg">
-               <h2>Czym różni się Jobsy od portali ogłoszeniowych:</h2>
+               <h1>Czym różni się Jobsy od portali ogłoszeniowych:</h1>
             </div>
         </div>
             <div class="grid gap-xl@md padding-top-lg">
@@ -213,7 +215,7 @@
 
 <section class="customer-logos padding-top-xl padding-bottom-xl">
     <div class="container max-width-lg">
-        <h2 class="text-center padding-bottom-xxxs">Zaufali nam</h2>
+        <h1 class="text-center padding-bottom-xxxs">Zaufali nam</h1>
         <p class="text-center">Zaufało nam wiele firm i pracowników. <br>Dołącz do nich już dziś.</p>
         <ul class="flex flex-wrap flex-column flex-row@md gap-xl@md flex-center padding-top-xs">
             <li>

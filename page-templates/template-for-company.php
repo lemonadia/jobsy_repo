@@ -80,19 +80,20 @@
             </div>
     </div>
 </section>
-<section class="hp-blue-two  bg-dark-blue padding-top-xxxl padding-bottom-xxxl">
+
+<section class="hp-blue-two bg-dark-blue padding-top-xxxl padding-bottom-xxl">
     <div class="container max-width-lg">
-        <div class="flex flex-row@sm flex-column-reverse items-center">
-            <div class="margin-left-xxl@md width-40%@md">
+         <div class="grid gap-md@md flex flex-row@sm items-center">
+            <div class="col-5@lg offset-1@md">
                 <h1 class="margin-bottom-md margin-bottom-sm@md margin-right-xxxs@md padding-top-md padding-top-0@md ">Nowa platforma pracy tymczasowej</h1>
                 <p class="padding-bottom-md">Korzystanie z Jobsy jest szybkie i wygodne. Po rejestracji na platformie i opublikowaniu oferty pracy, otrzymujesz zgłoszenia od kandydatów gotowych podjąć z Tobą współpracę.</p>
-                <p>Możesz przeglądać ich profile i dotychczasowe oceny, a także negocjować zaproponowane przez nich stawki. W każdym momencie możesz też liczyć na naszą pomoc.</p>
-                <a href="" class="btn btn--green margin-bottom-sm margin-right-xxl@lg"><span>Załóz da darmowe konto</span></a>
-            </div>
-            <div class="margin-left-lg">                     
-            <img class="margin-left-xl@md img-hp"src="<?php echo get_stylesheet_directory_uri(); ?>/images/hp-second.png" alt="kobieta praca komputer">
-            </div>
-         </div>
+                <p class="padding-bottom-md">Korzystanie z Jobsy jest szybkie i wygodne. Po rejestracji na platformie i opublikowaniu oferty pracy, otrzymujesz zgłoszenia od kandydatów gotowych podjąć z Tobą współpracę.</p>
+             </div>
+              <div class="col-5@lg">
+                <img class="margin-left-xl@md img-hp"src="<?php echo get_stylesheet_directory_uri(); ?>/images/company-man.png" alt="kobieta praca komputer">
+             </div>
+        </div>
+    </div>
 </section>
 
 <section class="timeline-company position-relative overflow-hidden padding-bottom-md">
@@ -181,7 +182,7 @@
     <div class="announcments-container company-container">
         <div class="grid">
             <div class="col-9@lg">
-               <h2>Z Jobsy zyskujesz</h2>
+               <h1>Z Jobsy zyskujesz</h1>
             </div>
         </div>
         </div>
