@@ -1,4 +1,5 @@
-:root, [data-theme="default"] {
+:root,
+[data-theme="default"] {
   // main
   @include defineColorHSL(--color-primary-darker, 42, 96%, 34%);
   @include defineColorHSL(--color-primary-dark, 42, 96%, 44%);
@@ -103,7 +104,7 @@
   @include defineColorHSL(--color-contrast-higher, 240, 8%, 12%);
 }
 
-@supports(--css: variables) {
+@supports (--css: variables) {
   [data-theme="Untitled"] {
     // main
     @include defineColorHSL(--color-primary-darker, 42, 96%, 34%);
@@ -210,7 +211,7 @@
   }
 }
 
-@supports(--css: variables) {
+@supports (--css: variables) {
   [data-theme=""] {
     // main
     @include defineColorHSL(--color-primary-darker, 42, 96%, 34%);
@@ -318,55 +319,157 @@
 }
 
 // background-color
-.bg-secondary-darker { background-color: alpha(var(--color-secondary-darker), var(--bg-o, 1)); }
-.bg-secondary-dark { background-color: alpha(var(--color-secondary-dark), var(--bg-o, 1)); }
-.bg-secondary { background-color: alpha(var(--color-secondary), var(--bg-o, 1)); }
-.bg-secondary-light { background-color: alpha(var(--color-secondary-light), var(--bg-o, 1)); }
-.bg-secondary-lighter { background-color: alpha(var(--color-secondary-lighter), var(--bg-o, 1)); }
-.bg-tertiary-darker { background-color: alpha(var(--color-tertiary-darker), var(--bg-o, 1)); }
-.bg-tertiary-dark { background-color: alpha(var(--color-tertiary-dark), var(--bg-o, 1)); }
-.bg-tertiary { background-color: alpha(var(--color-tertiary), var(--bg-o, 1)); }
-.bg-tertiary-light { background-color: alpha(var(--color-tertiary-light), var(--bg-o, 1)); }
-.bg-tertiary-lighter { background-color: alpha(var(--color-tertiary-lighter), var(--bg-o, 1)); }
-.bg-dark-blue-darker { background-color: alpha(var(--color-dark-blue-darker), var(--bg-o, 1)); }
-.bg-dark-blue-dark { background-color: alpha(var(--color-dark-blue-dark), var(--bg-o, 1)); }
-.bg-dark-blue { background-color: alpha(var(--color-dark-blue), var(--bg-o, 1)); }
-.bg-dark-blue-light { background-color: alpha(var(--color-dark-blue-light), var(--bg-o, 1)); }
-.bg-dark-blue-lighter { background-color: alpha(var(--color-dark-blue-lighter), var(--bg-o, 1)); }
-.bg-bright-blue-darker { background-color: alpha(var(--color-bright-blue-darker), var(--bg-o, 1)); }
-.bg-bright-blue-dark { background-color: alpha(var(--color-bright-blue-dark), var(--bg-o, 1)); }
-.bg-bright-blue { background-color: alpha(var(--color-bright-blue), var(--bg-o, 1)); }
-.bg-bright-blue-light { background-color: alpha(var(--color-bright-blue-light), var(--bg-o, 1)); }
-.bg-bright-blue-lighter { background-color: alpha(var(--color-bright-blue-lighter), var(--bg-o, 1)); }
-.bg-footer-darker { background-color: alpha(var(--color-footer-darker), var(--bg-o, 1)); }
-.bg-footer-dark { background-color: alpha(var(--color-footer-dark), var(--bg-o, 1)); }
-.bg-footer { background-color: alpha(var(--color-footer), var(--bg-o, 1)); }
-.bg-footer-light { background-color: alpha(var(--color-footer-light), var(--bg-o, 1)); }
-.bg-footer-lighter { background-color: alpha(var(--color-footer-lighter), var(--bg-o, 1)); }
-.bg-color-log-bg-darker { background-color: alpha(var(--color-color-log-bg-darker), var(--bg-o, 1)); }
-.bg-color-log-bg-dark { background-color: alpha(var(--color-color-log-bg-dark), var(--bg-o, 1)); }
-.bg-color-log-bg { background-color: alpha(var(--color-color-log-bg), var(--bg-o, 1)); }
-.bg-color-log-bg-light { background-color: alpha(var(--color-color-log-bg-light), var(--bg-o, 1)); }
-.bg-color-log-bg-lighter { background-color: alpha(var(--color-color-log-bg-lighter), var(--bg-o, 1)); }
-.bg-text-grey-darker { background-color: alpha(var(--color-text-grey-darker), var(--bg-o, 1)); }
-.bg-text-grey-dark { background-color: alpha(var(--color-text-grey-dark), var(--bg-o, 1)); }
-.bg-text-grey { background-color: alpha(var(--color-text-grey), var(--bg-o, 1)); }
-.bg-text-grey-light { background-color: alpha(var(--color-text-grey-light), var(--bg-o, 1)); }
-.bg-text-grey-lighter { background-color: alpha(var(--color-text-grey-lighter), var(--bg-o, 1)); }
-.bg-text-blue-darker { background-color: alpha(var(--color-text-blue-darker), var(--bg-o, 1)); }
-.bg-text-blue-dark { background-color: alpha(var(--color-text-blue-dark), var(--bg-o, 1)); }
-.bg-text-blue { background-color: alpha(var(--color-text-blue), var(--bg-o, 1)); }
-.bg-text-blue-light { background-color: alpha(var(--color-text-blue-light), var(--bg-o, 1)); }
-.bg-text-blue-lighter { background-color: alpha(var(--color-text-blue-lighter), var(--bg-o, 1)); }
-.bg-button-green-darker { background-color: alpha(var(--color-button-green-darker), var(--bg-o, 1)); }
-.bg-button-green-dark { background-color: alpha(var(--color-button-green-dark), var(--bg-o, 1)); }
-.bg-button-green { background-color: alpha(var(--color-button-green), var(--bg-o, 1)); }
-.bg-button-green-light { background-color: alpha(var(--color-button-green-light), var(--bg-o, 1)); }
-.bg-button-green-lighter { background-color: alpha(var(--color-button-green-lighter), var(--bg-o, 1)); }
-.bg-purple-darker { background-color: alpha(var(--color-purple-darker), var(--bg-o, 1)); }
-.bg-purple-dark { background-color: alpha(var(--color-purple-dark), var(--bg-o, 1)); }
-.bg-purple { background-color: alpha(var(--color-purple), var(--bg-o, 1)); }
-.bg-purple-light { background-color: alpha(var(--color-purple-light), var(--bg-o, 1)); }
-.bg-purple-lighter { background-color: alpha(var(--color-purple-lighter), var(--bg-o, 1)); }
+.bg-secondary-darker {
+  background-color: alpha(var(--color-secondary-darker), var(--bg-o, 1));
+}
+.bg-secondary-dark {
+  background-color: alpha(var(--color-secondary-dark), var(--bg-o, 1));
+}
+.bg-secondary {
+  background-color: alpha(var(--color-secondary), var(--bg-o, 1));
+}
+.bg-secondary-light {
+  background-color: alpha(var(--color-secondary-light), var(--bg-o, 1));
+}
+.bg-secondary-lighter {
+  background-color: alpha(var(--color-secondary-lighter), var(--bg-o, 1));
+}
+.bg-tertiary-darker {
+  background-color: alpha(var(--color-tertiary-darker), var(--bg-o, 1));
+}
+.bg-tertiary-dark {
+  background-color: alpha(var(--color-tertiary-dark), var(--bg-o, 1));
+}
+.bg-tertiary {
+  background-color: alpha(var(--color-tertiary), var(--bg-o, 1));
+}
+.bg-tertiary-light {
+  background-color: alpha(var(--color-tertiary-light), var(--bg-o, 1));
+}
+.bg-tertiary-lighter {
+  background-color: alpha(var(--color-tertiary-lighter), var(--bg-o, 1));
+}
+.bg-dark-blue-darker {
+  background-color: alpha(var(--color-dark-blue-darker), var(--bg-o, 1));
+}
+.bg-dark-blue-dark {
+  background-color: alpha(var(--color-dark-blue-dark), var(--bg-o, 1));
+}
+.bg-dark-blue {
+  background-color: alpha(var(--color-dark-blue), var(--bg-o, 1));
+}
+.bg-dark-blue-light {
+  background-color: alpha(var(--color-dark-blue-light), var(--bg-o, 1));
+}
+.bg-dark-blue-lighter {
+  background-color: alpha(var(--color-dark-blue-lighter), var(--bg-o, 1));
+}
+.bg-bright-blue-darker {
+  background-color: alpha(var(--color-bright-blue-darker), var(--bg-o, 1));
+}
+.bg-bright-blue-dark {
+  background-color: alpha(var(--color-bright-blue-dark), var(--bg-o, 1));
+}
+.bg-bright-blue {
+  background-color: alpha(var(--color-bright-blue), var(--bg-o, 1));
+}
+.bg-bright-blue-light {
+  background-color: alpha(var(--color-bright-blue-light), var(--bg-o, 1));
+}
+.bg-bright-blue-lighter {
+  background-color: alpha(var(--color-bright-blue-lighter), var(--bg-o, 1));
+}
+.bg-footer-darker {
+  background-color: alpha(var(--color-footer-darker), var(--bg-o, 1));
+}
+.bg-footer-dark {
+  background-color: alpha(var(--color-footer-dark), var(--bg-o, 1));
+}
+.bg-footer {
+  background-color: alpha(var(--color-footer), var(--bg-o, 1));
+}
+.bg-footer-light {
+  background-color: alpha(var(--color-footer-light), var(--bg-o, 1));
+}
+.bg-footer-lighter {
+  background-color: alpha(var(--color-footer-lighter), var(--bg-o, 1));
+}
+.bg-color-log-bg-darker {
+  background-color: alpha(var(--color-color-log-bg-darker), var(--bg-o, 1));
+}
+.bg-color-log-bg-dark {
+  background-color: alpha(var(--color-color-log-bg-dark), var(--bg-o, 1));
+}
+.bg-color-log-bg {
+  background-color: alpha(var(--color-color-log-bg), var(--bg-o, 1));
+}
+.bg-color-log-bg-light {
+  background-color: alpha(var(--color-color-log-bg-light), var(--bg-o, 1));
+}
+.bg-color-log-bg-lighter {
+  background-color: alpha(var(--color-color-log-bg-lighter), var(--bg-o, 1));
+}
+.bg-text-grey-darker {
+  background-color: alpha(var(--color-text-grey-darker), var(--bg-o, 1));
+}
+.bg-text-grey-dark {
+  background-color: alpha(var(--color-text-grey-dark), var(--bg-o, 1));
+}
+.bg-text-grey {
+  background-color: alpha(var(--color-text-grey), var(--bg-o, 1));
+}
+.bg-text-grey-light {
+  background-color: alpha(var(--color-text-grey-light), var(--bg-o, 1));
+}
+.bg-text-grey-lighter {
+  background-color: alpha(var(--color-text-grey-lighter), var(--bg-o, 1));
+}
+.bg-text-blue-darker {
+  background-color: alpha(var(--color-text-blue-darker), var(--bg-o, 1));
+}
+.bg-text-blue-dark {
+  background-color: alpha(var(--color-text-blue-dark), var(--bg-o, 1));
+}
+.bg-text-blue {
+  background-color: alpha(var(--color-text-blue), var(--bg-o, 1));
+}
+.bg-text-blue-light {
+  background-color: alpha(var(--color-text-blue-light), var(--bg-o, 1));
+}
+.bg-text-blue-lighter {
+  background-color: alpha(var(--color-text-blue-lighter), var(--bg-o, 1));
+}
+.bg-button-green-darker {
+  background-color: alpha(var(--color-button-green-darker), var(--bg-o, 1));
+}
+.bg-button-green-dark {
+  background-color: alpha(var(--color-button-green-dark), var(--bg-o, 1));
+}
+.bg-button-green {
+  background-color: alpha(var(--color-button-green), var(--bg-o, 1));
+}
+.bg-button-green-light {
+  background-color: alpha(var(--color-button-green-light), var(--bg-o, 1));
+}
+.bg-button-green-lighter {
+  background-color: alpha(var(--color-button-green-lighter), var(--bg-o, 1));
+}
+.bg-purple-darker {
+  background-color: alpha(var(--color-purple-darker), var(--bg-o, 1));
+}
+.bg-purple-dark {
+  background-color: alpha(var(--color-purple-dark), var(--bg-o, 1));
+}
+.bg-purple {
+  background-color: alpha(var(--color-purple), var(--bg-o, 1));
+}
+.bg-purple-light {
+  background-color: alpha(var(--color-purple-light), var(--bg-o, 1));
+}
+.bg-purple-lighter {
+  background-color: alpha(var(--color-purple-lighter), var(--bg-o, 1));
+}
 
-
+.bg-work {
+  background-color: #623ce7;
+}

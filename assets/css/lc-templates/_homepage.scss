@@ -3,7 +3,6 @@
     position: relative;
     z-index: 99;
   }
-
   position: relative;
   @include breakpoint(md) {
     height: 100vh;
@@ -32,35 +31,25 @@
       font-family: $font-bold;
     }
   }
-  .hero-img {
+  .hero-image {
     position: absolute;
     z-index: 0;
-    top: 27%;
-    width: 90%;
-    @include breakpoint(md) {
-      width: 100%;
-    }
+    width: 265px;
+    left: 50%;
+    margin-left: -132.5px;
+    top: 28%;
 
-    img {
-      display: block;
-      width: 262px;
-      margin: auto;
-    }
     @include breakpoint(md) {
-      position: static;
-      width: 526px;
-      position: relative;
-      top: 30px;
-      right: 50px;
-      z-index: 1;
-      img {
-        display: block;
-        width: 100%;
-      }
+      width: 506px;
+      top: 0;
+      left: 48%;
+      margin-left: 0;
     }
   }
 }
 .sectors {
+  position: relative;
+  z-index: 1;
   p {
     font-size: 17px;
     @include breakpoint(md) {
@@ -96,21 +85,6 @@
     font-size: 15px;
     font-family: $font-book;
   }
-
-  .list-rectangle {
-    color: white;
-    background: url(./../../images/list-rectangle.png);
-    background-repeat: no-repeat;
-    padding-left: 25px;
-    span {
-      position: relative;
-      top: -2px;
-      line-height: 23px;
-      @include breakpoint(md) {
-        line-height: 23px;
-      }
-    }
-  }
 }
 
 .hp-blue-two {
@@ -134,19 +108,7 @@
     font-size: 15px;
     font-family: $font-book;
   }
-
-  .list-rectangle {
-    color: white;
-    background: url(./../../images/list-rectangle.png);
-    background-repeat: no-repeat;
-    padding-left: 25px;
-    span {
-      position: relative;
-      top: -2px;
-    }
-  }
 }
-
 .img-hp {
   width: 449px;
 }
@@ -275,11 +237,11 @@
     line-height: 30px;
   }
   @include breakpoint(md) {
-    height: 987px;
     background-color: #3b75e8;
     position: relative;
     padding-top: 198px;
-    padding-left: 96px;
+    padding-left: 80px;
+    padding-bottom: 90px;
   }
   .announcments-container {
     padding: 22px;
@@ -288,6 +250,16 @@
     width: 100%;
     height: 100%;
     background-color: #ffffff;
+    &.company-container {
+      text-align: left;
+      width: 95%;
+      border-radius: 17px;
+      margin: 0 auto;
+      margin-top: 40px;
+      span {
+        color: black;
+      }
+    }
     h1 {
       font-family: $font-bold;
       text-align: center;
@@ -298,11 +270,27 @@
     }
     @include breakpoint(md) {
       box-shadow: 10px 10px 10px #00000029;
-      padding: 60px 54px;
-      width: 60%;
-      height: 82%;
+      padding: 60px 60px;
+      width: 62%;
+      height: 85%;
       background-color: #ffffff;
       border-radius: 17px;
+
+      &.company-container {
+        width: 58%;
+        height: 75%;
+        text-align: left;
+        margin: 0;
+        margin-top: 30px;
+        span {
+          color: black;
+        }
+      }
+      &.work-container {
+        width: 677px;
+        height: 411px;
+      }
+
       h1 {
         font-size: 39px;
         padding-top: 0;
@@ -333,5 +321,20 @@
   p {
     color: #8b959e;
     font-size: 13px;
+  }
+}
+
+.list-rectangle {
+  color: white;
+  background: url(./../../images/list-rectangle.png);
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  span {
+    position: relative;
+    top: -5px;
+    line-height: 23px;
+    @include breakpoint(md) {
+      line-height: 23px;
+    }
   }
 }

@@ -1,0 +1,57 @@
+/* -------------------------------- 
+
+File#: _1_tabs
+Title: Tabs
+Descr: A list of content sections (panels), accessible one at a time using control labels
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+.tabs {
+  height: 100vh;
+}
+
+.tabs__control {
+  text-decoration: none;
+  color: var(--color-contrast-medium);
+
+  &:focus {
+    outline: 2px solid alpha(var(--color-primary), 0.2);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    color: var(--color-contrast-high);
+  }
+}
+
+.js {
+  .tabs__control[aria-selected="true"] {
+    color: var(--color-contrast-high);
+    text-decoration: underline;
+  }
+}
+
+.js-tabs__panels {
+  width: 100%;
+  @include breakpoint(md) {
+    width: 60%;
+  }
+  h1 {
+    text-align: center;
+    @include breakpoint(md) {
+      text-align: left;
+    }
+  }
+  .faq-desc {
+    color: #8b959e;
+    font-family: $font-book;
+    font-size: 17px;
+    text-align: center;
+    @include breakpoint(md) {
+      padding-right: 220px;
+      font-size: 15px;
+      text-align: left;
+    }
+  }
+}

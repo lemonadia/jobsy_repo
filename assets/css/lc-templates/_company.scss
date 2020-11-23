@@ -35,3 +35,12 @@
     font-size: 15px;
   }
 }
+
+.company {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: var(--space-xxl);
+  @include breakpoint(md) {
+    display: block;
+  }
+}

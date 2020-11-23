@@ -1,0 +1,20 @@
+.faq {
+  height: auto;
+  .categories {
+    display: none;
+    width: 30%;
+    margin-top: 200px;
+    @include breakpoint(md) {
+      display: block;
+    }
+  }
+}
+
+.icon-faq {
+  background-color: #623ce7;
+  border: 1px solid border #623ce7;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
